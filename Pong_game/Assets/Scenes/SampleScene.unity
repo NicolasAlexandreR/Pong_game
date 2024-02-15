@@ -874,9 +874,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cd117af0cedc44fb6681d04fe7075c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0
+  movementSpeed: 2.5
   isAI: 0
-  ball: {fileID: 0}
+  ball: {fileID: 1560945853}
 --- !u!1 &1560945853
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +889,7 @@ GameObject:
   - component: {fileID: 1560945854}
   - component: {fileID: 1560945857}
   - component: {fileID: 1560945856}
+  - component: {fileID: 1560945858}
   m_Layer: 0
   m_Name: Basic Ball
   m_TagString: Untagged
@@ -979,7 +980,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d6576c707fc4ded4b8c91d8203ed6554, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -988,8 +989,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &1560945857
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1025,6 +1026,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.15
+--- !u!114 &1560945858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560945853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c83248f48fcfaff4ca06587a04040fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rbBola: {fileID: 1560945856}
+  velocidade: 5
 --- !u!1 &1720654896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,9 +1290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cd117af0cedc44fb6681d04fe7075c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0
-  isAI: 0
-  ball: {fileID: 0}
+  movementSpeed: 2.5
+  isAI: 1
+  ball: {fileID: 1560945853}
 --- !u!1 &1984831805
 GameObject:
   m_ObjectHideFlags: 0
