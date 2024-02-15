@@ -11,9 +11,25 @@ public class Bola : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        //vector2 (movimentação da bola), vai ir pro lado esquerdo
-        velocidadeBola.x = -velocidade; 
+    {   
+        //Iniciando a bola em alguma posição aleatória
+        int direcao = Random.Range(0, 4);
+
+        if(direcao == 0){
+            velocidadeBola.x = velocidade;
+            velocidadeBola.y = velocidade;
+        } 
+        else if(direcao == 1){
+            velocidadeBola.x = -velocidade;
+            velocidadeBola.y = velocidade;
+        }
+        else if(direcao == 2){
+            velocidadeBola.x = -velocidade;
+            velocidadeBola.y = -velocidade;
+        }  else {
+            velocidadeBola.x = velocidade;
+            velocidadeBola.y = -velocidade;
+        }
 
         //o Rigidbody vai mudar a posição da bola com a velocidade dada a váriavel velocidadeBola
         rbBola.velocity = velocidadeBola;
