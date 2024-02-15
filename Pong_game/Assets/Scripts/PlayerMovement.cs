@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //Se puder, comente os códigos para eu entender também, obrigado.
     [SerializeField] private float movementSpeed;
     [SerializeField] private bool isAI;
     [SerializeField] private GameObject ball;
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //Verificando se é um jogador(pessoa real) ou IA
         if (isAI)
         {
             AIControl();
