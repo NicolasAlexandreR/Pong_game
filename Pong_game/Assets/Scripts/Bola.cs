@@ -8,7 +8,6 @@ public class Bola : MonoBehaviour
     public Rigidbody2D rbBola; 
     private Vector2 velocidadeBola; 
     public float velocidade = 5f;
-
     // Start is called before the first frame update
     void Start()
     {   
@@ -38,6 +37,6 @@ public class Bola : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+                
     }
 }
